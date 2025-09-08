@@ -93,7 +93,10 @@ export default function RootLayout({
           }}
         />
       </head>
-      <body className={`${inter.variable} ${playfair.variable} ${dancing.variable} font-body antialiased`}>
+      <body 
+        className={`${inter.variable} ${playfair.variable} ${dancing.variable} font-body antialiased`}
+        suppressHydrationWarning={true}
+      >
         <SkipNavigation links={skipNavLinks} />
         <div className="flex flex-col min-h-screen bg-light">
           <Header />

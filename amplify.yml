@@ -1,5 +1,8 @@
 version: 1
 frontend:
+  environment:
+    variables:
+      NODE_VERSION: '20'
   phases:
     preBuild:
       commands:
@@ -15,3 +18,7 @@ frontend:
     paths:
       - node_modules/**/*
       - .next/cache/**/*
+backend:
+  phases:
+    build:
+      commands: []
