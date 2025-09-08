@@ -1,0 +1,15 @@
+# Amplify ignore file - exclude server-side files for static export
+.next/
+node_modules/
+.git/
+.env*
+*.log
+.DS_Store
+src/
+next.config.mjs
+package.json
+package-lock.json
+tsconfig.json
+tailwind.config.ts
+postcss.config.mjs
+README.md
