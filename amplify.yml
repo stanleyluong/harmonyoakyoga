@@ -3,9 +3,16 @@ frontend:
   phases:
     preBuild:
       commands:
+        - export AMPLIFY_MONOREPO_APP_ROOT=.
+        - echo "Setting AMPLIFY_MONOREPO_APP_ROOT to current directory"
+        - echo "Current directory contents:"
+        - ls -la
+        - echo "Checking for package.json:"
+        - ls -la package.json || echo "package.json not found"
         - npm ci
     build:
       commands:
+        - export AMPLIFY_MONOREPO_APP_ROOT=.
         - npm run build
   artifacts:
     baseDirectory: out
