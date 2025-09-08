@@ -3,22 +3,10 @@ frontend:
   phases:
     preBuild:
       commands:
-        - echo "Starting preBuild phase"
-        - echo "Current working directory:"
-        - pwd
-        - echo "Directory contents:"
-        - ls -la
-        - echo "Checking package.json:"
-        - cat package.json | head -10
-        - echo "Installing dependencies..."
         - npm ci
     build:
       commands:
-        - echo "Starting build phase"
-        - echo "Running build command..."
         - npm run build
-        - echo "Build completed, checking output:"
-        - ls -la out/
   artifacts:
     baseDirectory: out
     files:
