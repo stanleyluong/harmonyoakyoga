@@ -4,6 +4,7 @@ frontend:
     variables:
       _LIVE_UPDATES: '[{"name":"Node.js","pkg":"node","type":"nvm","version":"20"}]'
       AMPLIFY_DIFF_DEPLOY: false
+      AMPLIFY_MONOREPO_APP_ROOT: .
   phases:
     preBuild:
       commands:
@@ -26,10 +27,19 @@ frontend:
         - find out/ -name "*middleware*" -delete || echo "No middleware files found"
         - echo "Creating required-server-files.json for Amplify static deployment"
         - echo '{"version":3,"routes":[],"dynamicRoutes":[],"staticRoutes":[],"dataRoutes":[],"i18n":null,"rewrites":[],"headers":[],"redirects":[],"trailingSlash":true,"buildId":"static-export"}' > out/required-server-files.json
+        - echo "Creating server trace files for Amplify compatibility"
+        - mkdir -p out/.next
+        - echo '{"version":3,"buildId":"static-export","type":"static"}' > out/.next/trace
+        - echo '{"version":3,"buildId":"static-export","type":"static"}' > out/.next/build-manifest.json
+        - echo "Creating static export manifest"
+        - echo '{"version":3,"buildId":"static-export","type":"static","routes":[],"staticRoutes":[],"dynamicRoutes":[],"dataRoutes":[],"i18n":null,"rewrites":[],"headers":[],"redirects":[],"trailingSlash":true}' > out/.next/static-export-manifest.json
+        - echo "Verifying static export files"
+        - ls -la out/.next/
   artifacts:
     baseDirectory: out
     files:
       - '**/*'
+    name: static-export
   cache:
     paths:
       - node_modules/**/*
