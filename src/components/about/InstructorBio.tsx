@@ -52,7 +52,7 @@ export default function InstructorBio() {
               </p>
               
               <p>
-                I completed my teacher training in Indonesia and expanded my studies in India, the birthplace of yoga. Over the past year, I've been working with private clients in Huntsville and online worldwide, tailoring sessions to fit their unique needs.
+                I completed my teacher training in Indonesia and expanded my studies in India, the birthplace of yoga. Over the past year, I&apos;ve been working with private clients in Huntsville and online worldwide, tailoring sessions to fit their unique needs.
               </p>
             </div>
             
