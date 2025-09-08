@@ -2,14 +2,21 @@ version: 1
 frontend:
   environment:
     variables:
-      NODE_VERSION: '20'
+      _LIVE_UPDATES: '[{"name":"Node.js","pkg":"node","type":"nvm","version":"20"}]'
+      AMPLIFY_DIFF_DEPLOY: false
+      AMPLIFY_MONOREPO_APP_ROOT: .
   phases:
     preBuild:
       commands:
+        - nvm use 20
+        - node --version
+        - npm --version
         - npm ci
     build:
       commands:
         - npm run build
+        - echo "Static export completed"
+        - ls -la out/
   artifacts:
     baseDirectory: out
     files:
@@ -18,7 +25,12 @@ frontend:
     paths:
       - node_modules/**/*
       - .next/cache/**/*
-backend:
-  phases:
-    build:
-      commands: []
+customHeaders:
+  - pattern: '**/*'
+    headers:
+      - key: 'Strict-Transport-Security'
+        value: 'max-age=31536000; includeSubDomains'
+      - key: 'X-Frame-Options'
+        value: 'DENY'
+      - key: 'X-Content-Type-Options'
+        value: 'nosniff'

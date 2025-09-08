@@ -1,8 +1,8 @@
 import { siteConfig } from '@/config/site'
 import { ImageResponse } from 'next/og'
 
-// Route segment config
-export const runtime = 'edge'
+// Route segment config - removed edge runtime for static export compatibility
+// export const runtime = 'edge'
 
 // Image metadata
 export const alt = siteConfig.name
