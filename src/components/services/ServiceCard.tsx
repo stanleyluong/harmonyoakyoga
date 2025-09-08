@@ -58,10 +58,10 @@ export default function ServiceCard({ service, priority = false }: ServiceCardPr
       </CardContent>
       
       <CardFooter className="pt-4 sm:pt-6 px-4 sm:px-6">
-        <Link href="/book" className="w-full">
+        <Link href={`/contact?service=${service.id}`} className="w-full">
           <Button 
             variant="primary" 
-            className="w-full text-sm sm:text-base py-2.5 sm:py-3 will-change-transform"
+            className="w-full text-sm sm:text-base py-2.5 sm:py-3 will-change-transform font-serif"
             aria-label={`Book ${service.name} session`}
           >
             Book {service.name}

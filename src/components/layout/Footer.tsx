@@ -29,7 +29,7 @@ export default function Footer() {
             <p className="text-sm text-neutral/70 max-w-sm leading-relaxed">
               {siteConfig.description}
             </p>
-            <p className="font-accent text-accent text-sm flex items-center gap-2">
+            <p className="font-heading text-accent text-sm flex items-center gap-2">
               <MaterialIcon name="self_care" size="sm" />
               {siteConfig.tagline}
               <MaterialIcon name="spa" size="sm" />

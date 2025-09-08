@@ -34,7 +34,7 @@ export default function InstructorBio() {
               <h3 className="text-2xl font-heading text-neutral mb-2">
                 Jennifer Tostado
               </h3>
-              <p className="text-lg text-accent font-accent mb-4">
+              <p className="text-lg text-accent font-heading mb-4">
                 Certified Yoga Instructor, Sound Healer & Somatic Healing Practitioner
               </p>
             </div>
@@ -75,12 +75,12 @@ export default function InstructorBio() {
             {/* Call to Action */}
             <div className="flex flex-col sm:flex-row gap-4 pt-6">
               <Link href="/book">
-                <Button size="lg" className="w-full sm:w-auto">
+                <Button size="lg" className="w-full sm:w-auto font-serif">
                   Book a Session
                 </Button>
               </Link>
               <Link href="/contact">
-                <Button variant="outline" size="lg" className="w-full sm:w-auto">
+                <Button variant="outline" size="lg" className="w-full sm:w-auto font-serif">
                   Get in Touch
                 </Button>
               </Link>

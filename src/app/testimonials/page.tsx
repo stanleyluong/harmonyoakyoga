@@ -40,12 +40,12 @@ export default function TestimonialsPage() {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link href="/book">
-              <Button variant="primary" size="lg">
+              <Button variant="primary" size="lg" className="font-serif">
                 Start Your Journey
               </Button>
             </Link>
             <Link href="/services">
-              <Button variant="outline" size="lg">
+              <Button variant="outline" size="lg" className="font-serif">
                 Explore Services
               </Button>
             </Link>
@@ -109,12 +109,12 @@ export default function TestimonialsPage() {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link href="/book">
-              <Button variant="primary" size="lg">
+              <Button variant="primary" size="lg" className="font-serif">
                 Book Your First Session
               </Button>
             </Link>
             <Link href="/contact">
-              <Button variant="outline" size="lg">
+              <Button variant="outline" size="lg" className="font-serif">
                 Ask Questions
               </Button>
             </Link>

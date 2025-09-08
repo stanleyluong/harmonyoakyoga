@@ -12,7 +12,7 @@ export default function AboutPreview() {
               <h2 className="text-3xl sm:text-4xl font-heading text-neutral mb-4">
                 Welcome to Our Studio
               </h2>
-              <p className="text-xl font-accent text-accent mb-6">
+              <p className="text-xl font-heading text-accent mb-6">
                 Creating a safe space for healing and growth
               </p>
             </div>
@@ -38,12 +38,12 @@ export default function AboutPreview() {
             
             <div className="flex flex-col sm:flex-row gap-4 pt-4">
               <Link href="/about">
-                <Button size="lg" className="w-full sm:w-auto">
+                <Button size="lg" className="w-full sm:w-auto font-serif">
                   Our Story
                 </Button>
               </Link>
               <Link href="/contact">
-                <Button variant="outline" size="lg" className="w-full sm:w-auto">
+                <Button variant="outline" size="lg" className="w-full sm:w-auto font-serif">
                   Get in Touch
                 </Button>
               </Link>

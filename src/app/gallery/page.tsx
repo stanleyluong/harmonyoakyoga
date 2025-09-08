@@ -51,7 +51,7 @@ const galleryImages: ImageData[] = [
   { src: '/images/studio/IMG_2256.jpg.png', alt: 'Studio environment and atmosphere', category: 'Studio' },
 ]
 
-const categories = ['All', 'Community', 'Instructor', 'Studio']
+const categories = ['All', 'Community', 'Studio', 'Instructor']
 
 export default function GalleryPage() {
   return (

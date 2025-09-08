@@ -55,12 +55,14 @@ export default class BookingErrorBoundary extends Component<Props, State> {
                     <Button 
                       onClick={() => window.location.reload()}
                       variant="primary"
+                      className="font-serif"
                     >
                       Refresh Page
                     </Button>
                     <Button 
                       onClick={() => window.location.href = '/contact'}
                       variant="outline"
+                      className="font-serif"
                     >
                       Contact Us
                     </Button>

@@ -2,7 +2,8 @@
 
 import Button from '@/components/ui/Button'
 import Card, { CardContent, CardHeader, CardTitle } from '@/components/ui/Card'
-import { useState } from 'react'
+import { useSearchParams } from 'next/navigation'
+import { Suspense, useEffect, useState } from 'react'
 
 interface FormData {
   name: string
@@ -18,7 +19,20 @@ interface FormErrors {
   message?: string
 }
 
-export default function ContactForm() {
+function ContactFormInner() {
+  const searchParams = useSearchParams()
+  const serviceParam = searchParams.get('service')
+  
+  // Map service IDs to form values
+  const serviceMapping: { [key: string]: string } = {
+    'private-yoga': 'private-sessions',
+    'small-groups': 'group-classes',
+    'online-sessions': 'online-sessions',
+    'womens-gatherings': 'womens-gatherings',
+    'holistic-ceremonies': 'holistic-ceremonies',
+    'sound-healing': 'sound-healing'
+  }
+  
   const [formData, setFormData] = useState<FormData>({
     name: '',
     email: '',
@@ -26,6 +40,16 @@ export default function ContactForm() {
     subject: '',
     message: ''
   })
+  
+  // Pre-select service if coming from service page
+  useEffect(() => {
+    if (serviceParam && serviceMapping[serviceParam]) {
+      setFormData(prev => ({
+        ...prev,
+        subject: serviceMapping[serviceParam]
+      }))
+    }
+  }, [serviceParam])
   
   const [errors, setErrors] = useState<FormErrors>({})
   const [isSubmitting, setIsSubmitting] = useState(false)
@@ -273,7 +297,7 @@ export default function ContactForm() {
           <Button
             type="submit"
             disabled={isSubmitting}
-            className="w-full"
+            className="w-full font-serif"
             size="lg"
           >
             {isSubmitting ? 'Sending...' : 'Send Message'}
@@ -309,5 +333,34 @@ export default function ContactForm() {
         </div>
       </CardContent>
     </Card>
+  )
+}
+
+export default function ContactForm() {
+  return (
+    <Suspense fallback={
+      <Card variant="elevated">
+        <CardHeader>
+          <CardTitle className="text-2xl">Send us a Message</CardTitle>
+        </CardHeader>
+        <CardContent>
+          <div className="animate-pulse space-y-6">
+            <div className="h-4 bg-secondary/30 rounded w-1/4"></div>
+            <div className="h-12 bg-secondary/30 rounded"></div>
+            <div className="h-4 bg-secondary/30 rounded w-1/4"></div>
+            <div className="h-12 bg-secondary/30 rounded"></div>
+            <div className="h-4 bg-secondary/30 rounded w-1/4"></div>
+            <div className="h-12 bg-secondary/30 rounded"></div>
+            <div className="h-4 bg-secondary/30 rounded w-1/4"></div>
+            <div className="h-12 bg-secondary/30 rounded"></div>
+            <div className="h-4 bg-secondary/30 rounded w-1/4"></div>
+            <div className="h-32 bg-secondary/30 rounded"></div>
+            <div className="h-12 bg-secondary/30 rounded"></div>
+          </div>
+        </CardContent>
+      </Card>
+    }>
+      <ContactFormInner />
+    </Suspense>
   )
 }

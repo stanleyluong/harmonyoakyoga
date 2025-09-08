@@ -18,14 +18,14 @@ export default function BookingCTA() {
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
             <Link href="/book">
-              <Button variant="primary" size="lg" className="min-w-48">
+              <Button variant="primary" size="lg" className="min-w-48 font-serif">
                 Book Your Session
               </Button>
             </Link>
             <Link href="/contact">
-              <button className="inline-flex items-center justify-center rounded-luxury font-medium transition-all duration-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 disabled:cursor-not-allowed transform hover:scale-[1.02] active:scale-[0.98] shadow-sm hover:shadow-md h-13 px-8 text-lg min-w-48 bg-white text-neutral border-2 border-neutral hover:bg-neutral hover:text-white">
+              <Button variant="outline" size="lg" className="min-w-48 font-serif">
                 Ask Questions
-              </button>
+              </Button>
             </Link>
           </div>
           

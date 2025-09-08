@@ -82,12 +82,12 @@ export default function BookingConfirmationPage() {
           {/* Action Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link href="/">
-              <Button variant="primary">
+              <Button variant="primary" className="font-serif">
                 Return to Home
               </Button>
             </Link>
             <Link href="/services">
-              <Button variant="outline">
+              <Button variant="outline" className="font-serif">
                 Explore Our Services
               </Button>
             </Link>

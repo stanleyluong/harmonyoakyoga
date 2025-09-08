@@ -62,19 +62,19 @@ export default function ThankYouPage() {
             {/* Action Buttons */}
             <div className="space-y-3">
               <Link href="/" className="block">
-                <Button variant="primary" className="w-full">
+                <Button variant="primary" className="w-full font-serif">
                   Return to Homepage
                 </Button>
               </Link>
               
               <Link href="/book" className="block">
-                <Button variant="outline" className="w-full">
+                <Button variant="outline" className="w-full font-serif">
                   Book a Session
                 </Button>
               </Link>
               
               <Link href="/services" className="block">
-                <Button variant="secondary" className="w-full">
+                <Button variant="secondary" className="w-full font-serif">
                   Explore Our Services
                 </Button>
               </Link>

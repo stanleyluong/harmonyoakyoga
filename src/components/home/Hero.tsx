@@ -1,5 +1,4 @@
 import Button from '@/components/ui/Button'
-import MaterialIcon from '@/components/ui/MaterialIcon'
 import { siteConfig } from '@/config/site'
 import NextImage from 'next/image'
 import Link from 'next/link'
@@ -28,10 +27,8 @@ export default function Hero() {
             {siteConfig.name}
           </h1>
           
-          <p className="text-responsive-lg sm:text-2xl lg:text-3xl font-accent mb-6 sm:mb-8 leading-relaxed font-medium flex items-center justify-center gap-3" style={{ color: '#333333 !important' }}>
-            <MaterialIcon name="self_care" size="md" />
+          <p className="text-responsive-lg sm:text-2xl lg:text-3xl font-heading mb-6 sm:mb-8 leading-relaxed font-medium text-center" style={{ color: '#333333 !important' }}>
             {siteConfig.tagline}
-            <MaterialIcon name="spa" size="md" />
           </p>
           
           <p className="text-responsive-base sm:text-xl text-neutral/90 mb-8 sm:mb-12 max-w-2xl mx-auto leading-relaxed">
@@ -43,7 +40,7 @@ export default function Hero() {
             <Link href="/book" className="w-full sm:w-auto">
               <Button 
                 size="lg" 
-                className="w-full sm:w-auto min-w-[200px] will-change-transform"
+                className="w-full sm:w-auto min-w-[200px] will-change-transform font-serif"
                 aria-label="Book your yoga session"
               >
                 Book Your Session
@@ -53,7 +50,7 @@ export default function Hero() {
               <Button 
                 variant="outline" 
                 size="lg" 
-                className="w-full sm:w-auto min-w-[200px] bg-light/90 backdrop-blur-sm will-change-transform"
+                className="w-full sm:w-auto min-w-[200px] bg-light/90 backdrop-blur-sm will-change-transform font-serif"
                 aria-label="Learn more about our studio"
               >
                 Learn About Us

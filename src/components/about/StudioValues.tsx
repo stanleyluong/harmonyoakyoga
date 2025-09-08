@@ -42,7 +42,7 @@ export default function StudioValues() {
           <h2 className="text-3xl sm:text-4xl font-heading text-neutral mb-4">
             Our Values & Approach
           </h2>
-          <p className="text-xl font-accent text-accent max-w-3xl mx-auto mb-6">
+          <p className="text-xl font-heading text-accent max-w-3xl mx-auto mb-6">
             The principles that guide everything we do
           </p>
           <p className="text-lg text-neutral/70 max-w-2xl mx-auto leading-relaxed">

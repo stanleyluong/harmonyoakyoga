@@ -39,7 +39,7 @@ export default function ServicePreview() {
         
         <div className="text-center">
           <Link href="/services">
-            <Button size="lg">
+            <Button size="lg" className="font-serif">
               View All Services
             </Button>
           </Link>

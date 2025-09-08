@@ -73,7 +73,7 @@ export default function StudioGallery() {
           <h2 className="text-3xl sm:text-4xl font-heading text-neutral mb-4">
             Studio Gallery
           </h2>
-          <p className="text-xl font-accent text-accent max-w-2xl mx-auto">
+          <p className="text-xl font-serif text-accent max-w-2xl mx-auto">
             Take a glimpse into our peaceful sanctuary
           </p>
         </div>

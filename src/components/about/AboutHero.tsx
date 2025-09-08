@@ -25,7 +25,7 @@ export default function AboutHero() {
           About Harmony Oak Yoga
         </h1>
         
-        <p className="text-xl sm:text-2xl font-accent text-light/90 mb-8 leading-relaxed drop-shadow-md">
+        <p className="text-xl sm:text-2xl font-heading text-light/90 mb-8 leading-relaxed drop-shadow-md">
           Creating a safe space for healing, growth, and connection
         </p>
         

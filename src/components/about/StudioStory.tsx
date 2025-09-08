@@ -14,7 +14,7 @@ export default function StudioStory() {
               <h2 className="text-3xl sm:text-4xl font-heading text-neutral mb-4">
                 Our Story
               </h2>
-              <p className="text-xl font-accent text-accent mb-6">
+              <p className="text-xl font-heading text-accent mb-6">
                 A journey of healing and discovery
               </p>
             </div>

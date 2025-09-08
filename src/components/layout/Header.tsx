@@ -107,7 +107,7 @@ export default function Header() {
           {/* Desktop CTA Button */}
           <div className="hidden lg:flex">
             <Link href="/book">
-              <Button size="sm" className="will-change-transform">
+              <Button size="sm" className="will-change-transform font-serif">
                 Book Now
               </Button>
             </Link>
@@ -176,7 +176,7 @@ export default function Header() {
             ))}
             <div className="pt-3 px-3">
               <Link href="/book" onClick={closeMenu}>
-                <Button className="w-full justify-center">
+                <Button className="w-full justify-center font-serif">
                   Book Now
                 </Button>
               </Link>
