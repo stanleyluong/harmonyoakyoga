@@ -82,7 +82,7 @@ export function generateMetadata({
 
     // Additional meta tags
     other: {
-      'theme-color': '#F1E3DA',
+      'theme-color': '#F8F6F3',
       'color-scheme': 'light',
       'format-detection': 'telephone=yes',
     },

@@ -152,10 +152,10 @@ export default function Header() {
           className={cn(
             'lg:hidden overflow-hidden transition-all duration-300 ease-in-out',
             isMenuOpen 
-              ? 'max-h-96 opacity-100 border-t border-stone/20 bg-light/95 backdrop-blur-xl' 
+              ? 'max-h-[32rem] opacity-100 border-t border-stone/20 bg-light/95 backdrop-blur-xl' 
               : 'max-h-0 opacity-0'
           )}
-          aria-hidden={!isMenuOpen}
+          {...(!isMenuOpen && { inert: '' })}
         >
           <nav className="py-4 space-y-1" role="navigation" aria-label="Mobile navigation">
             {siteConfig.navigation.map((item) => (
@@ -174,7 +174,7 @@ export default function Header() {
                 {item.name}
               </Link>
             ))}
-            <div className="pt-3 px-3">
+            <div className="pt-6 px-4 pb-12">
               <Link href="/book" onClick={closeMenu}>
                 <Button className="w-full justify-center font-serif">
                   Book Now

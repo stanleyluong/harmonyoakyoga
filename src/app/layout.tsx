@@ -5,7 +5,7 @@ import { siteConfig } from '@/config/site'
 import { generateLocalBusinessStructuredData, generateMetadata } from '@/lib/seo'
 import type { Metadata } from 'next'
 import dynamic from 'next/dynamic'
-import { Dancing_Script, Inter, Playfair_Display } from 'next/font/google'
+import { Inter, Playfair_Display } from 'next/font/google'
 import './globals.css'
 
 // Optimized font loading with display swap
@@ -23,12 +23,7 @@ const playfair = Playfair_Display({
   preload: true,
 })
 
-const dancing = Dancing_Script({ 
-  subsets: ['latin'],
-  variable: '--font-dancing',
-  display: 'swap',
-  preload: false, // Less critical font
-})
+
 
 // Dynamically import Web Vitals for performance monitoring
 const WebVitals = dynamic(() => import('@/components/WebVitals'), {
@@ -79,7 +74,7 @@ export default function RootLayout({
         <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
         
         {/* Theme color for mobile browsers */}
-        <meta name="theme-color" content="#CE9C7E" />
+        <meta name="theme-color" content="#F8F6F3" />
         
         {/* Favicon links */}
         <link rel="icon" href="/favicon.ico" />
@@ -94,7 +89,7 @@ export default function RootLayout({
         />
       </head>
       <body 
-        className={`${inter.variable} ${playfair.variable} ${dancing.variable} font-body antialiased`}
+        className={`${inter.variable} ${playfair.variable} font-body antialiased`}
         suppressHydrationWarning={true}
       >
         <SkipNavigation links={skipNavLinks} />

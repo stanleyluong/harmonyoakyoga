@@ -20,7 +20,6 @@ const config: Config = {
       fontFamily: {
         'heading': ['var(--font-playfair)', 'serif'],
         'body': ['var(--font-inter)', 'sans-serif'],
-        'accent': ['var(--font-dancing)', 'cursive'],
         'serif': ['var(--font-playfair)', 'serif'],
         'sans': ['var(--font-inter)', 'sans-serif'],
       },
