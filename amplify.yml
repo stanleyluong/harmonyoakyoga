@@ -1,16 +1,8 @@
 version: 1
 frontend:
-  environment:
-    variables:
-      _LIVE_UPDATES: '[{"name":"Node.js","pkg":"node","type":"nvm","version":"20"}]'
-      AMPLIFY_DIFF_DEPLOY: false
-      AMPLIFY_MONOREPO_APP_ROOT: .
   phases:
     preBuild:
       commands:
-        - nvm use 20
-        - node --version
-        - npm --version
         - npm ci
     build:
       commands:
