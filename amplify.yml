@@ -24,6 +24,8 @@ frontend:
         - rm -rf out/server/ || echo "No server directory found"
         - find out/ -name "*server*" -delete || echo "No server files found"
         - find out/ -name "*middleware*" -delete || echo "No middleware files found"
+        - echo "Creating required-server-files.json for Amplify static deployment"
+        - echo '{"version":3,"routes":[],"dynamicRoutes":[],"staticRoutes":[],"dataRoutes":[],"i18n":null,"rewrites":[],"headers":[],"redirects":[],"trailingSlash":true,"buildId":"static-export"}' > out/required-server-files.json
   artifacts:
     baseDirectory: out
     files:
