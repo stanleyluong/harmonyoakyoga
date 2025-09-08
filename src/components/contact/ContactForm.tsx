@@ -4,11 +4,6 @@ import Button from '@/components/ui/Button'
 import Card, { CardContent, CardHeader, CardTitle } from '@/components/ui/Card'
 import { useState } from 'react'
 
-// Generate unique ID helper
-function generateId(prefix: string = 'element'): string {
-  return `${prefix}-${Math.random().toString(36).substr(2, 9)}`
-}
-
 interface FormData {
   name: string
   email: string
@@ -36,15 +31,15 @@ export default function ContactForm() {
   const [isSubmitting, setIsSubmitting] = useState(false)
   const [submitStatus, setSubmitStatus] = useState<'idle' | 'success' | 'error'>('idle')
   
-  // Generate unique IDs for form elements
-  const nameId = generateId('name')
-  const emailId = generateId('email')
-  const phoneId = generateId('phone')
-  const subjectId = generateId('subject')
-  const messageId = generateId('message')
-  const nameErrorId = generateId('name-error')
-  const emailErrorId = generateId('email-error')
-  const messageErrorId = generateId('message-error')
+  // Generate consistent IDs for form elements
+  const nameId = 'contact-form-name'
+  const emailId = 'contact-form-email'
+  const phoneId = 'contact-form-phone'
+  const subjectId = 'contact-form-subject'
+  const messageId = 'contact-form-message'
+  const nameErrorId = 'contact-form-name-error'
+  const emailErrorId = 'contact-form-email-error'
+  const messageErrorId = 'contact-form-message-error'
 
   const validateForm = (): boolean => {
     const newErrors: FormErrors = {}

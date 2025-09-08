@@ -8,7 +8,7 @@ export const siteConfig = {
     email: "jentostado@gmail.com", // Update with actual email
     phone: "(425) 414-6054", // Update with actual phone
     address: "Huntsville, Alabama", // Update with actual address
-    instagram: "https://instagram.com/harmonyoakstudio", // Update with actual Instagram
+    instagram: "https://www.instagram.com/harmonyoakyoga", // Update with actual Instagram
   },
   
 
