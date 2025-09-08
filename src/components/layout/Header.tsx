@@ -155,7 +155,7 @@ export default function Header() {
               ? 'max-h-[32rem] opacity-100 border-t border-stone/20 bg-light/95 backdrop-blur-xl' 
               : 'max-h-0 opacity-0'
           )}
-          {...(!isMenuOpen && { inert: '' })}
+          {...(!isMenuOpen && ({ inert: "" } as any))}
         >
           <nav className="py-4 space-y-1" role="navigation" aria-label="Mobile navigation">
             {siteConfig.navigation.map((item) => (
