@@ -140,7 +140,7 @@ This is the foundation setup. Upcoming tasks will add:
 ## 📞 Contact
 
 **Harmony Oak Studio**  
-Creating a safe space 🧘🏽‍♀️ Huntsville Al 🪷
+Creating a safe space • Huntsville Al
 
 - Email: jentostado@gmail.com
 - Phone: (425) 414-6054

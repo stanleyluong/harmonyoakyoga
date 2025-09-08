@@ -1,51 +1,7 @@
 import Button from '@/components/ui/Button'
 import Card, { CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/Card'
+import { services } from '@/config/services'
 import Link from 'next/link'
-
-const services = [
-  {
-    id: 'private-sessions',
-    name: 'Private Sessions',
-    description: 'One-on-one personalized yoga practice',
-    details: 'Experience personalized attention and customized sequences designed specifically for your body, goals, and experience level.',
-    icon: '🧘🏽‍♀️'
-  },
-  {
-    id: 'small-groups',
-    name: 'Small Group Classes',
-    description: 'Intimate classes with friends',
-    details: 'Share the yoga experience with a small group of friends in a supportive, non-intimidating environment.',
-    icon: '👥'
-  },
-  {
-    id: 'online-sessions',
-    name: 'Online Sessions',
-    description: 'Practice from anywhere',
-    details: 'Join our virtual classes and maintain your practice from the comfort of your home with live instruction.',
-    icon: '💻'
-  },
-  {
-    id: 'womens-gatherings',
-    name: "Women's Gatherings",
-    description: 'Sacred circles for connection',
-    details: 'Monthly gatherings focused on community, healing, and empowerment in a safe, supportive space.',
-    icon: '🌸'
-  },
-  {
-    id: 'holistic-ceremonies',
-    name: 'Holistic Ceremonies',
-    description: 'Transformative healing experiences',
-    details: 'Ceremonial practices combining movement, breathwork, and mindfulness for deep healing and transformation.',
-    icon: '🌿'
-  },
-  {
-    id: 'sound-healing',
-    name: 'Sound Healing',
-    description: 'Therapeutic sound experiences',
-    details: 'Immersive sound baths using singing bowls, chimes, and other instruments to promote deep relaxation.',
-    icon: '🎵'
-  }
-]
 
 export default function ServicePreview() {
   return (
@@ -64,15 +20,17 @@ export default function ServicePreview() {
           {services.map((service) => (
             <Card key={service.id} variant="elevated" className="h-full hover:shadow-xl transition-shadow duration-300">
               <CardHeader>
-                <div className="text-3xl mb-2">{service.icon}</div>
+                <div className="mb-2">
+                  <service.icon className="text-4xl text-accent" />
+                </div>
                 <CardTitle className="text-xl">{service.name}</CardTitle>
                 <CardDescription className="text-accent font-medium">
-                  {service.description}
+                  {service.shortDescription}
                 </CardDescription>
               </CardHeader>
               <CardContent>
                 <p className="text-sm text-neutral/70 leading-relaxed">
-                  {service.details}
+                  {service.description}
                 </p>
               </CardContent>
             </Card>

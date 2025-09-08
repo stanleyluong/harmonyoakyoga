@@ -10,12 +10,12 @@ interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
 
 const Button = forwardRef<HTMLButtonElement, ButtonProps>(
   ({ children, variant = 'primary', size = 'md', className, ...props }, ref) => {
-    const baseStyles = 'inline-flex items-center justify-center rounded-brand font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 disabled:cursor-not-allowed'
+    const baseStyles = 'inline-flex items-center justify-center rounded-luxury font-medium transition-all duration-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 disabled:cursor-not-allowed transform hover:scale-[1.02] active:scale-[0.98] shadow-sm hover:shadow-md'
     
     const variants = {
-      primary: 'bg-accent text-white hover:bg-accent/90 active:bg-accent/80',
-      secondary: 'bg-secondary text-neutral hover:bg-secondary/90 active:bg-secondary/80',
-      outline: 'border-2 border-accent text-accent bg-transparent hover:bg-accent hover:text-white active:bg-accent/90'
+      primary: 'bg-accent text-light hover:bg-accent/90 active:bg-accent/80 shadow-accent/20',
+      secondary: 'bg-stone text-neutral hover:bg-stone/90 active:bg-stone/80 shadow-stone/20',
+      outline: 'border-2 border-accent text-accent bg-light/80 backdrop-blur-sm hover:bg-accent hover:text-light active:bg-accent/90 shadow-accent/10'
     }
     
     const sizes = {

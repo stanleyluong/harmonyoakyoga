@@ -1,6 +1,6 @@
 export const siteConfig = {
   name: "Harmony Oak Yoga",
-  tagline: "Creating a safe space 🧘🏽‍♀️ Huntsville Al 🪷",
+  tagline: "Creating a safe space • Huntsville Al",
   description: "Professional yoga studio in Huntsville, Alabama offering private sessions, small groups, online classes, women's gatherings, holistic ceremonies, and sound healing.",
   url: process.env.NEXT_PUBLIC_SITE_URL || "https://harmonyoakstudio.netlify.app", // Will be updated with actual domain
   

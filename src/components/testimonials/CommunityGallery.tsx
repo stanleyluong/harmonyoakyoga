@@ -27,23 +27,14 @@ export default function CommunityGallery() {
       src: '/images/community/IMG_2070.jpeg',
       alt: 'Healing circle with community members'
     },
+
     {
       id: 5,
-      src: '/images/community/IMG_2584.jpeg',
-      alt: 'Joyful community gathering and connection'
-    },
-    {
-      id: 6,
       src: '/images/community/IMG_4284.jpeg',
       alt: 'Sacred women\'s ceremony and ritual'
     },
     {
-      id: 7,
-      src: '/images/community/IMG_6632.jpeg',
-      alt: 'Community celebration and sisterhood'
-    },
-    {
-      id: 8,
+      id: 6,
       src: '/images/community/IMG_6854.jpeg',
       alt: 'Group healing and transformation session'
     }

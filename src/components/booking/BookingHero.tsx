@@ -1,5 +1,7 @@
 'use client'
 
+
+
 export default function BookingHero() {
   return (
     <section className="relative py-16 lg:py-24 overflow-hidden">
@@ -23,20 +25,7 @@ export default function BookingHero() {
           Ready to begin your journey? Choose from our range of services and find a time that works for you. 
           We&apos;re here to create a safe space for your practice and growth.
         </p>
-        <div className="flex flex-col sm:flex-row gap-4 justify-center items-center text-sm text-neutral/80">
-          <div className="flex items-center gap-2">
-            <span className="text-accent">📅</span>
-            <span>Flexible scheduling</span>
-          </div>
-          <div className="flex items-center gap-2">
-            <span className="text-accent">🏠</span>
-            <span>In-person & online options</span>
-          </div>
-          <div className="flex items-center gap-2">
-            <span className="text-accent">💝</span>
-            <span>Personalized experience</span>
-          </div>
-        </div>
+
       </div>
     </section>
   )

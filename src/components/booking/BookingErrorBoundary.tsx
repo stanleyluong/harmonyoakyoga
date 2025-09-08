@@ -2,7 +2,10 @@
 
 import Button from '@/components/ui/Button'
 import Card, { CardContent, CardHeader, CardTitle } from '@/components/ui/Card'
+import MaterialIcon from '@/components/ui/MaterialIcon'
 import { siteConfig } from '@/config/site'
+import EmailIcon from '@mui/icons-material/Email'
+import PhoneIcon from '@mui/icons-material/Phone'
 import { Component, ErrorInfo, ReactNode } from 'react'
 
 interface Props {
@@ -36,7 +39,9 @@ export default class BookingErrorBoundary extends Component<Props, State> {
             <div className="max-w-2xl mx-auto">
               <Card variant="elevated" padding="lg" className="text-center">
                 <CardHeader>
-                  <div className="text-4xl mb-4">⚠️</div>
+                  <div className="mb-4">
+                    <MaterialIcon name="warning" size="large" className="text-accent" />
+                  </div>
                   <CardTitle className="text-2xl">
                     Something went wrong
                   </CardTitle>
@@ -66,8 +71,14 @@ export default class BookingErrorBoundary extends Component<Props, State> {
                       You can also contact us directly:
                     </p>
                     <div className="flex flex-col sm:flex-row gap-2 text-sm justify-center">
-                      <span>📞 {siteConfig.contact.phone}</span>
-                      <span>📧 {siteConfig.contact.email}</span>
+                      <span className="flex items-center gap-1 justify-center">
+                        <PhoneIcon className="text-accent text-sm" />
+                        {siteConfig.contact.phone}
+                      </span>
+                      <span className="flex items-center gap-1 justify-center">
+                        <EmailIcon className="text-accent text-sm" />
+                        {siteConfig.contact.email}
+                      </span>
                     </div>
                   </div>
                 </CardContent>

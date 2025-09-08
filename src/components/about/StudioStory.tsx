@@ -1,4 +1,7 @@
 import Card from '@/components/ui/Card'
+import MaterialIcon from '@/components/ui/MaterialIcon'
+import ExploreIcon from '@mui/icons-material/Explore'
+import HandshakeIcon from '@mui/icons-material/Handshake'
 
 export default function StudioStory() {
   return (
@@ -41,7 +44,9 @@ export default function StudioStory() {
           <div className="space-y-6">
             <Card variant="elevated" className="bg-primary/10">
               <div className="text-center">
-                <div className="text-4xl mb-4">🌱</div>
+                <div className="mb-4">
+                  <MaterialIcon name="growth" size="large" className="text-accent" />
+                </div>
                 <h3 className="text-xl font-heading text-neutral mb-3">Our Philosophy</h3>
                 <p className="text-neutral/70 leading-relaxed">
                   We believe that every body is a yoga body. Our practice is rooted in compassion, 
@@ -52,7 +57,9 @@ export default function StudioStory() {
             
             <Card variant="elevated" className="bg-secondary/10">
               <div className="text-center">
-                <div className="text-4xl mb-4">🤝</div>
+                <div className="mb-4">
+                  <ExploreIcon className="text-4xl text-accent" />
+                </div>
                 <h3 className="text-xl font-heading text-neutral mb-3">Our Approach</h3>
                 <p className="text-neutral/70 leading-relaxed">
                   We meet you exactly where you are, honoring your unique needs and creating 
@@ -63,7 +70,9 @@ export default function StudioStory() {
             
             <Card variant="elevated" className="bg-accent/10">
               <div className="text-center">
-                <div className="text-4xl mb-4">🏡</div>
+                <div className="mb-4">
+                  <HandshakeIcon className="text-4xl text-accent" />
+                </div>
                 <h3 className="text-xl font-heading text-neutral mb-3">Our Promise</h3>
                 <p className="text-neutral/70 leading-relaxed">
                   To provide a safe, welcoming space where you can explore, grow, and heal 

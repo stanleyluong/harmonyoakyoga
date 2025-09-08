@@ -109,12 +109,12 @@ export default function TestimonialsPage() {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link href="/book">
-              <Button variant="secondary" size="lg" className="bg-white text-accent hover:bg-white/90">
+              <Button variant="primary" size="lg">
                 Book Your First Session
               </Button>
             </Link>
             <Link href="/contact">
-              <Button variant="outline" size="lg" className="border-white text-white hover:bg-white/10">
+              <Button variant="outline" size="lg">
                 Ask Questions
               </Button>
             </Link>

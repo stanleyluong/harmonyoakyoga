@@ -21,7 +21,9 @@ export default function ServiceDescriptions() {
           {services.map((service) => (
             <Card key={service.id} variant="elevated" className="h-full">
               <CardHeader>
-                <div className="text-3xl mb-2">{service.icon}</div>
+                <div className="text-3xl mb-2">
+                  <service.icon className="text-3xl text-accent" />
+                </div>
                 <CardTitle className="text-xl">{service.name}</CardTitle>
                 <CardDescription>{service.shortDescription}</CardDescription>
               </CardHeader>

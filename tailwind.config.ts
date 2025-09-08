@@ -9,27 +9,35 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        primary: '#F1E3DA',     // Warm peach - soft, welcoming
-        secondary: '#EAD5C8',   // Dusty rose - calming, nurturing
-        accent: '#CE9C7E',      // Terracotta - grounding, earthy
-        neutral: '#333333',     // Charcoal - readable text
-        light: '#FEFEFE',       // Off-white - clean backgrounds
+        primary: '#F8F6F3',     // Warm ivory - luxurious, clean
+        secondary: '#E8E2DC',   // Soft linen - sophisticated, calming
+        accent: '#B8A082',      // Warm taupe - elegant, grounding
+        neutral: '#2C2C2C',     // Deep charcoal - refined text
+        light: '#FEFDFB',       // Pure cream - premium feel
+        sage: '#A8B5A0',       // Soft sage - spa-like accent
+        stone: '#D4CFC7',      // Warm stone - natural luxury
       },
       fontFamily: {
         'heading': ['var(--font-playfair)', 'serif'],
         'body': ['var(--font-inter)', 'sans-serif'],
         'accent': ['var(--font-dancing)', 'cursive'],
+        'serif': ['var(--font-playfair)', 'serif'],
+        'sans': ['var(--font-inter)', 'sans-serif'],
       },
       spacing: {
         '18': '4.5rem',
         '88': '22rem',
+        '128': '32rem',
+        '144': '36rem',
       },
       maxWidth: {
         'content': '1200px',
         'prose': '65ch',
       },
       borderRadius: {
-        'brand': '8px',
+        'brand': '12px',
+        'luxury': '16px',
+        'soft': '20px',
       },
       screens: {
         'xs': '475px',

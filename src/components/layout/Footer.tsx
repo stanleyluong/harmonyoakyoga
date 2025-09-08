@@ -1,3 +1,4 @@
+import MaterialIcon from '@/components/ui/MaterialIcon'
 import { siteConfig } from '@/config/site'
 import NextImage from 'next/image'
 import Link from 'next/link'
@@ -14,7 +15,7 @@ export default function Footer() {
             <div className="flex items-center space-x-3">
               <div className="flex h-8 w-8 items-center justify-center rounded-full bg-white/90 overflow-hidden">
                 <NextImage
-                  src="/images/harmonyoakyogalogo.png"
+                  src="/images/harmonyoakyogalogonotext.png"
                   alt="Harmony Oak Yoga Logo"
                   width={32}
                   height={32}
@@ -28,8 +29,10 @@ export default function Footer() {
             <p className="text-sm text-neutral/70 max-w-sm leading-relaxed">
               {siteConfig.description}
             </p>
-            <p className="font-accent text-accent text-sm">
+            <p className="font-accent text-accent text-sm flex items-center gap-2">
+              <MaterialIcon name="self_care" size="sm" />
               {siteConfig.tagline}
+              <MaterialIcon name="spa" size="sm" />
             </p>
           </div>
 
@@ -114,8 +117,8 @@ export default function Footer() {
           <p className="text-xs text-neutral/60 text-center sm:text-left">
             © {currentYear} {siteConfig.name}. All rights reserved.
           </p>
-          <p className="text-xs text-neutral/60 text-center sm:text-right">
-            Made with 🤍 in Huntsville, Alabama
+          <p className="text-xs text-neutral/60 text-center sm:text-right flex items-center justify-center sm:justify-end gap-1">
+            Made with <MaterialIcon name="favorite" size="xs" className="text-accent" /> in Huntsville, Alabama
           </p>
         </div>
       </div>

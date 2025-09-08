@@ -14,7 +14,7 @@ const Card = forwardRef<HTMLDivElement, CardProps>(
     
     const variants = {
       default: 'bg-light border border-secondary/20',
-      elevated: 'bg-light shadow-lg shadow-secondary/10 border border-secondary/10',
+      elevated: 'bg-white shadow-xl shadow-secondary/20 border border-secondary/10',
       outlined: 'bg-transparent border-2 border-secondary'
     }
     

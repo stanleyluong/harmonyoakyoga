@@ -18,9 +18,9 @@ const galleryImages: ImageData[] = [
   { src: '/images/community/IMG_1271.jpeg', alt: 'Yoga community gathering', category: 'Community' },
   { src: '/images/community/IMG_2049.jpeg', alt: 'Group yoga session', category: 'Community' },
   { src: '/images/community/IMG_2070.jpeg', alt: 'Community yoga class', category: 'Community' },
-  { src: '/images/community/IMG_2584.jpeg', alt: 'Yoga practitioners together', category: 'Community' },
+
   { src: '/images/community/IMG_4284.jpeg', alt: 'Community yoga event', category: 'Community' },
-  { src: '/images/community/IMG_6632.jpeg', alt: 'Group meditation session', category: 'Community' },
+
   { src: '/images/community/IMG_6854.jpeg', alt: 'Yoga community celebration', category: 'Community' },
   
   // Instructor Images
@@ -31,11 +31,11 @@ const galleryImages: ImageData[] = [
   { src: '/images/instructor/IMG_1265.jpeg', alt: 'Yoga pose demonstration', category: 'Instructor' },
   { src: '/images/instructor/IMG_1268.jpeg', alt: 'Instructor in meditation', category: 'Instructor' },
   { src: '/images/instructor/IMG_1269.jpeg', alt: 'Teaching yoga techniques', category: 'Instructor' },
-  { src: '/images/instructor/IMG_1364.jpeg', alt: 'Instructor yoga practice', category: 'Instructor' },
+
   { src: '/images/instructor/IMG_1379.jpeg', alt: 'Yoga instructor portrait', category: 'Instructor' },
   { src: '/images/instructor/IMG_2193.jpeg', alt: 'Instructor demonstration', category: 'Instructor' },
   { src: '/images/instructor/IMG_2197.jpeg', alt: 'Yoga teaching moment', category: 'Instructor' },
-  { src: '/images/instructor/IMG_2202.jpeg', alt: 'Instructor in action', category: 'Instructor' },
+
   { src: '/images/instructor/IMG_5234.jpeg', alt: 'Yoga instructor practice', category: 'Instructor' },
   { src: '/images/instructor/IMG_6325.jpeg', alt: 'Instructor yoga pose', category: 'Instructor' },
   { src: '/images/instructor/IMG_7149.jpeg', alt: 'Teaching yoga class', category: 'Instructor' },
@@ -48,6 +48,7 @@ const galleryImages: ImageData[] = [
   { src: '/images/studio/grdr 2025-09-07 143155.712.jpeg', alt: 'Yoga studio space', category: 'Studio' },
   { src: '/images/studio/grdr 2025-09-07 143232.349.jpeg', alt: 'Studio interior view', category: 'Studio' },
   { src: '/images/studio/IMG_1270.jpeg', alt: 'Studio practice area', category: 'Studio' },
+  { src: '/images/studio/IMG_2256.jpg.png', alt: 'Studio environment and atmosphere', category: 'Studio' },
 ]
 
 const categories = ['All', 'Community', 'Instructor', 'Studio']
@@ -59,7 +60,7 @@ export default function GalleryPage() {
       <section className="relative bg-primary/5 py-16 sm:py-24">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
-            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-primary mb-6">
+            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-neutral mb-6">
               Gallery
             </h1>
             <p className="text-lg sm:text-xl text-neutral/80 max-w-3xl mx-auto">
@@ -79,7 +80,7 @@ export default function GalleryPage() {
             
             return (
               <div key={category} className="mb-16">
-                <h2 className="text-3xl font-bold text-primary mb-8 text-center">
+                <h2 className="text-3xl font-bold text-neutral mb-8 text-center">
                   {category}
                 </h2>
                 

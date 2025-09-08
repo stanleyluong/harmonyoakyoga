@@ -1,3 +1,4 @@
+import MaterialIcon from '@/components/ui/MaterialIcon'
 import NextImage from 'next/image'
 
 export default function ServicesHero() {
@@ -32,9 +33,15 @@ export default function ServicesHero() {
       </div>
       
       {/* Decorative elements */}
-      <div className="absolute top-10 left-10 text-4xl opacity-20 animate-pulse z-10">🪷</div>
-      <div className="absolute bottom-10 right-10 text-3xl opacity-20 animate-pulse delay-1000 z-10">🧘🏽‍♀️</div>
-      <div className="absolute top-1/2 left-20 text-2xl opacity-10 animate-pulse delay-500 z-10">✨</div>
+      <div className="absolute top-10 left-10 opacity-20 animate-pulse z-10">
+        <MaterialIcon name="lotus" size="large" className="text-accent" />
+      </div>
+      <div className="absolute bottom-10 right-10 opacity-20 animate-pulse delay-1000 z-10">
+        <MaterialIcon name="yoga" className="text-accent" />
+      </div>
+      <div className="absolute top-1/2 left-20 opacity-10 animate-pulse delay-500 z-10">
+        <MaterialIcon name="sparkles" className="text-accent" />
+      </div>
     </section>
   )
 }

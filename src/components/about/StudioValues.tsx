@@ -1,34 +1,35 @@
 import Card, { CardContent, CardHeader, CardTitle } from '@/components/ui/Card'
+import MaterialIcon from '@/components/ui/MaterialIcon'
 
 export default function StudioValues() {
   const values = [
     {
-      icon: '🛡️',
+      icon: 'security',
       title: 'Safety First',
       description: 'We prioritize creating a physically and emotionally safe environment where everyone feels welcome and protected.'
     },
     {
-      icon: '🤗',
+      icon: 'group',
       title: 'Inclusive Community',
       description: 'Our studio welcomes all bodies, all backgrounds, and all levels of experience. Diversity makes us stronger.'
     },
     {
-      icon: '🌿',
+      icon: 'spa',
       title: 'Mindful Practice',
       description: 'We emphasize presence over performance, encouraging students to listen to their bodies and honor their limits.'
     },
     {
-      icon: '💝',
+      icon: 'healing',
       title: 'Compassionate Guidance',
       description: 'Our teaching approach is rooted in kindness, patience, and understanding of each individual\'s unique journey.'
     },
     {
-      icon: '🌱',
+      icon: 'growth',
       title: 'Personal Growth',
       description: 'We support each student\'s personal development, both on and off the mat, fostering self-awareness and confidence.'
     },
     {
-      icon: '🕊️',
+      icon: 'healing',
       title: 'Healing Space',
       description: 'We recognize yoga as a powerful tool for healing and create space for transformation at your own pace.'
     }
@@ -54,7 +55,9 @@ export default function StudioValues() {
           {values.map((value, index) => (
             <Card key={index} variant="elevated" className="text-center h-full">
               <CardHeader>
-                <div className="text-4xl mb-4">{value.icon}</div>
+                <div className="mb-4">
+                  <MaterialIcon name={value.icon} size="large" className="text-accent" />
+                </div>
                 <CardTitle className="text-lg">{value.title}</CardTitle>
               </CardHeader>
               <CardContent>
@@ -69,7 +72,9 @@ export default function StudioValues() {
         {/* Safe Space Commitment */}
         <Card variant="elevated" className="bg-gradient-to-r from-primary/10 via-secondary/10 to-accent/10 border-accent/20">
           <div className="text-center">
-            <div className="text-5xl mb-6">🏡</div>
+            <div className="mb-6">
+              <MaterialIcon name="home" className="text-accent text-5xl" />
+            </div>
             <h3 className="text-2xl font-heading text-neutral mb-4">
               Our Commitment to Creating Safe Spaces
             </h3>

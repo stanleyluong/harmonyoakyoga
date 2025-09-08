@@ -1,4 +1,5 @@
 import Button from '@/components/ui/Button'
+import MaterialIcon from '@/components/ui/MaterialIcon'
 import { siteConfig } from '@/config/site'
 import NextImage from 'next/image'
 import Link from 'next/link'
@@ -27,13 +28,15 @@ export default function Hero() {
             {siteConfig.name}
           </h1>
           
-          <p className="text-responsive-lg sm:text-2xl lg:text-3xl font-accent mb-6 sm:mb-8 leading-relaxed font-medium" style={{ color: '#333333 !important' }}>
+          <p className="text-responsive-lg sm:text-2xl lg:text-3xl font-accent mb-6 sm:mb-8 leading-relaxed font-medium flex items-center justify-center gap-3" style={{ color: '#333333 !important' }}>
+            <MaterialIcon name="self_care" size="md" />
             {siteConfig.tagline}
+            <MaterialIcon name="spa" size="md" />
           </p>
           
           <p className="text-responsive-base sm:text-xl text-neutral/90 mb-8 sm:mb-12 max-w-2xl mx-auto leading-relaxed">
-            Experience personalized yoga instruction in a nurturing environment designed to support your wellness journey. 
-            From private sessions to group classes, we create space for healing and growth.
+            Experience personalized yoga classes in a supportive and nurturing space, thoughtfully designed to guide your wellness journey. 
+            Offered both online and in-person, from private sessions to group classes, we hold space for healing, balance, and growth through yoga, sound healing, and somatic practices.
           </p>
           
           <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center items-center max-w-md sm:max-w-none mx-auto mb-24 sm:mb-32">

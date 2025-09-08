@@ -11,9 +11,6 @@ export default function InstructorBio() {
           <h2 className="text-3xl sm:text-4xl font-heading text-neutral mb-4">
             Meet Your Instructor
           </h2>
-          <p className="text-xl font-accent text-accent max-w-2xl mx-auto">
-            Dedicated to creating transformative experiences through mindful movement
-          </p>
         </div>
         
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 items-start">
@@ -21,7 +18,7 @@ export default function InstructorBio() {
           <div className="lg:col-span-1">
             <div className="aspect-[3/4] rounded-brand shadow-lg overflow-hidden">
               <NextImage
-                src="/images/instructor/Tezza-5551.jpeg"
+                src="/images/instructor/IMG_7149.jpeg"
                 alt="Jennifer Tostado, Yoga Instructor at Harmony Oak Yoga"
                 width={400}
                 height={533}

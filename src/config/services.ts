@@ -1,3 +1,11 @@
+import { SvgIconComponent } from '@mui/icons-material'
+import CandlestickChartIcon from '@mui/icons-material/CandlestickChart'
+import ComputerIcon from '@mui/icons-material/Computer'
+import FavoriteIcon from '@mui/icons-material/Favorite'
+import GroupIcon from '@mui/icons-material/Group'
+import MusicNoteIcon from '@mui/icons-material/MusicNote'
+import PersonIcon from '@mui/icons-material/Person'
+
 export interface Service {
   id: string
   name: string
@@ -5,7 +13,7 @@ export interface Service {
   shortDescription: string
   features: string[]
   pricing?: string
-  icon: string
+  icon: SvgIconComponent
 }
 
 export const services: Service[] = [
@@ -21,8 +29,8 @@ export const services: Service[] = [
       'Safe space to explore and grow',
       'Modifications for injuries or limitations'
     ],
-    pricing: 'Starting at $85 per session',
-    icon: '🧘🏽‍♀️'
+    pricing: 'Starting at $60 per session',
+    icon: PersonIcon
   },
   {
     id: 'small-groups',
@@ -36,8 +44,8 @@ export const services: Service[] = [
       'Various skill levels welcome',
       'Regular class schedules available'
     ],
-    pricing: 'Starting at $35 per class',
-    icon: '👥'
+    pricing: 'Starting at $100 per class',
+    icon: GroupIcon
   },
   {
     id: 'online-sessions',
@@ -52,7 +60,7 @@ export const services: Service[] = [
       'Same quality instruction as in-person'
     ],
     pricing: 'Starting at $25 per session',
-    icon: '💻'
+    icon: ComputerIcon
   },
   {
     id: 'womens-gatherings',
@@ -66,8 +74,8 @@ export const services: Service[] = [
       'Sisterhood and community building',
       'New moon and full moon celebrations'
     ],
-    pricing: 'Starting at $45 per gathering',
-    icon: '🌙'
+    pricing: 'Starting at $25 per gathering',
+    icon: FavoriteIcon
   },
   {
     id: 'holistic-ceremonies',
@@ -82,21 +90,21 @@ export const services: Service[] = [
       'Integration support and guidance'
     ],
     pricing: 'Custom pricing available',
-    icon: '🕯️'
+    icon: CandlestickChartIcon
   },
   {
     id: 'sound-healing',
     name: 'Sound Healing',
-    shortDescription: 'Therapeutic sound baths using crystal bowls, gongs, and other healing instruments.',
-    description: 'Immerse yourself in the healing vibrations of sound therapy. Our sound healing sessions use crystal singing bowls, gongs, and other sacred instruments to promote deep relaxation and energetic healing.',
+    shortDescription: 'Therapeutic sound baths using crystal bowls and other healing instruments.',
+    description: 'Immerse yourself in the healing vibrations of sound therapy. Our sound healing sessions use crystal singing bowls and other sacred instruments to promote deep relaxation and energetic healing.',
     features: [
       'Crystal singing bowl therapy',
-      'Tibetan gong immersion',
       'Chakra balancing frequencies',
+      'Joshua chimes and shakers',
       'Deep relaxation and stress relief',
       'Group and private sessions available'
     ],
-    pricing: 'Starting at $40 per session',
-    icon: '🎵'
+    pricing: 'Starting at $45 per 30 min',
+    icon: MusicNoteIcon
   }
 ]

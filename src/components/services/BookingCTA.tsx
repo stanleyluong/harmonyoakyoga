@@ -1,4 +1,6 @@
 import Button from '@/components/ui/Button'
+import MaterialIcon from '@/components/ui/MaterialIcon'
+import HomeIcon from '@mui/icons-material/Home'
 import Link from 'next/link'
 
 export default function BookingCTA() {
@@ -21,29 +23,35 @@ export default function BookingCTA() {
               </Button>
             </Link>
             <Link href="/contact">
-              <Button variant="outline" size="lg" className="min-w-48">
+              <button className="inline-flex items-center justify-center rounded-luxury font-medium transition-all duration-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 disabled:cursor-not-allowed transform hover:scale-[1.02] active:scale-[0.98] shadow-sm hover:shadow-md h-13 px-8 text-lg min-w-48 bg-white text-neutral border-2 border-neutral hover:bg-neutral hover:text-white">
                 Ask Questions
-              </Button>
+              </button>
             </Link>
           </div>
           
           <div className="mt-12 grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
             <div className="flex flex-col items-center">
-              <div className="text-3xl mb-3">🤝</div>
+              <div className="mb-3">
+                <MaterialIcon name="handshake" size="large" className="text-accent" />
+              </div>
               <h3 className="font-semibold text-neutral mb-2">Personalized Approach</h3>
               <p className="text-sm text-neutral/70">
                 Every session is tailored to your unique needs and goals
               </p>
             </div>
             <div className="flex flex-col items-center">
-              <div className="text-3xl mb-3">🏠</div>
+              <div className="mb-3">
+                <HomeIcon className="text-3xl text-accent" />
+              </div>
               <h3 className="font-semibold text-neutral mb-2">Safe Space</h3>
               <p className="text-sm text-neutral/70">
                 A welcoming environment where you can explore and grow
               </p>
             </div>
             <div className="flex flex-col items-center">
-              <div className="text-3xl mb-3">🌱</div>
+              <div className="mb-3">
+                <MaterialIcon name="growth" size="large" className="text-accent" />
+              </div>
               <h3 className="font-semibold text-neutral mb-2">Holistic Wellness</h3>
               <p className="text-sm text-neutral/70">
                 Supporting your mind, body, and spirit on your wellness journey

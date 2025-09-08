@@ -14,7 +14,7 @@ const nextConfig = {
   },
   env: {
     SITE_NAME: 'Harmony Oak Studio',
-    SITE_TAGLINE: 'Creating a safe space 🧘🏽‍♀️ Huntsville Al 🪷',
+    SITE_TAGLINE: 'Creating a safe space • Huntsville Al',
   },
   // Ensure proper handling of environment variables for Amplify
   publicRuntimeConfig: {

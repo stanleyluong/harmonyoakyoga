@@ -16,7 +16,7 @@ export default function ServiceCard({ service, priority = false }: ServiceCardPr
     >
       <CardHeader className="text-center pb-4 sm:pb-6">
         <div className="text-4xl sm:text-5xl mb-3 sm:mb-4 transition-transform duration-300 group-hover:scale-110">
-          {service.icon}
+          <service.icon className="text-4xl sm:text-5xl text-accent" />
         </div>
         <CardTitle className="text-xl sm:text-2xl mb-2 leading-tight">
           {service.name}

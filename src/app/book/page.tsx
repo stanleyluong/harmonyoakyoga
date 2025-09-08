@@ -3,6 +3,8 @@ import BookingHero from '@/components/booking/BookingHero'
 import ServiceDescriptions from '@/components/booking/ServiceDescriptions'
 import { siteConfig } from '@/config/site'
 import { generateMetadata } from '@/lib/seo'
+import EmailIcon from '@mui/icons-material/Email'
+import PhoneIcon from '@mui/icons-material/Phone'
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = generateMetadata({
@@ -31,13 +33,13 @@ export default function BookPage() {
             </p>
             <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
               <div className="flex items-center gap-2">
-                <span className="text-accent">📧</span>
+                <EmailIcon className="text-accent text-lg" />
                 <a href={`mailto:${siteConfig.contact.email}`} className="text-accent hover:text-accent/80 font-medium">
                   {siteConfig.contact.email}
                 </a>
               </div>
               <div className="flex items-center gap-2">
-                <span className="text-accent">📞</span>
+                <PhoneIcon className="text-accent text-lg" />
                 <a href={`tel:${siteConfig.contact.phone}`} className="text-accent hover:text-accent/80 font-medium">
                   {siteConfig.contact.phone}
                 </a>

@@ -55,8 +55,8 @@ export default function Header() {
       className={cn(
         'sticky top-0 z-50 w-full transition-all duration-300',
         isScrolled 
-          ? 'bg-light/95 backdrop-blur-md shadow-sm border-b border-secondary/20' 
-          : 'bg-light/80 backdrop-blur-sm'
+          ? 'bg-light/98 backdrop-blur-xl shadow-lg shadow-stone/10 border-b border-stone/15' 
+          : 'bg-light/90 backdrop-blur-md'
       )}
       role="banner"
     >
@@ -91,9 +91,9 @@ export default function Header() {
                 key={item.name}
                 href={item.href}
                 className={cn(
-                  'text-sm font-medium transition-all duration-200 hover:text-accent relative',
-                  'after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 after:bg-accent after:transition-all after:duration-200',
-                  'hover:after:w-full',
+                  'text-sm font-medium transition-all duration-300 hover:text-accent relative tracking-wide',
+                  'after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 after:bg-accent after:transition-all after:duration-300',
+                  'hover:after:w-full hover:tracking-wider',
                   pathname === item.href
                     ? 'text-accent after:w-full'
                     : 'text-neutral/80'
@@ -116,7 +116,7 @@ export default function Header() {
           {/* Mobile Menu Button */}
           <button
             onClick={toggleMenu}
-            className="lg:hidden flex items-center justify-center w-9 h-9 sm:w-10 sm:h-10 rounded-brand text-neutral hover:bg-secondary/20 transition-colors focus-visible-ring"
+            className="lg:hidden flex items-center justify-center w-9 h-9 sm:w-10 sm:h-10 rounded-luxury text-neutral hover:bg-stone/20 transition-all duration-300 focus-visible-ring hover:scale-105"
             aria-label={isMenuOpen ? 'Close navigation menu' : 'Open navigation menu'}
             aria-expanded={isMenuOpen}
             aria-controls="mobile-navigation"
@@ -152,7 +152,7 @@ export default function Header() {
           className={cn(
             'lg:hidden overflow-hidden transition-all duration-300 ease-in-out',
             isMenuOpen 
-              ? 'max-h-96 opacity-100 border-t border-secondary/20' 
+              ? 'max-h-96 opacity-100 border-t border-stone/20 bg-light/95 backdrop-blur-xl' 
               : 'max-h-0 opacity-0'
           )}
           aria-hidden={!isMenuOpen}
@@ -164,10 +164,10 @@ export default function Header() {
                 href={item.href}
                 onClick={closeMenu}
                 className={cn(
-                  'block px-3 py-2 text-base font-medium transition-colors rounded-brand',
-                  'hover:bg-secondary/20 hover:text-accent',
+                  'block px-4 py-3 text-base font-medium transition-all duration-300 rounded-luxury',
+                  'hover:bg-stone/20 hover:text-accent hover:translate-x-1',
                   pathname === item.href
-                    ? 'text-accent bg-secondary/10'
+                    ? 'text-accent bg-stone/15'
                     : 'text-neutral/80'
                 )}
               >

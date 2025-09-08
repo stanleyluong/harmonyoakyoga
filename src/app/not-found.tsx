@@ -1,4 +1,5 @@
 import Button from '@/components/ui/Button'
+import MaterialIcon from '@/components/ui/MaterialIcon'
 import { generateMetadata } from '@/lib/seo'
 import { Metadata } from 'next'
 import Link from 'next/link'
@@ -14,7 +15,9 @@ export default function NotFound() {
     <div className="min-h-screen bg-gradient-to-b from-primary/20 to-light flex items-center justify-center px-4 sm:px-6 lg:px-8">
       <div className="max-w-md w-full text-center">
         <div className="mb-8">
-          <div className="text-8xl mb-4">🧘🏽‍♀️</div>
+          <div className="mb-4">
+            <MaterialIcon name="yoga" className="text-8xl text-accent" />
+          </div>
           <h1 className="font-heading text-4xl md:text-5xl font-bold text-neutral mb-4">
             Page Not Found
           </h1>
