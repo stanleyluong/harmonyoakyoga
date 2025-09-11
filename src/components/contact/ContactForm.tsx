@@ -27,10 +27,10 @@ function ContactFormInner() {
   const serviceMapping: { [key: string]: string } = {
     'private-yoga': 'private-sessions',
     'small-groups': 'group-classes',
+    'private-groups': 'private-groups',
     'online-sessions': 'online-sessions',
     'womens-gatherings': 'womens-gatherings',
-    'holistic-ceremonies': 'holistic-ceremonies',
-    'sound-healing': 'sound-healing'
+    'holistic-ceremonies': 'holistic-ceremonies'
   }
   
   const [formData, setFormData] = useState<FormData>({
@@ -251,10 +251,10 @@ function ContactFormInner() {
               <option value="general">General Inquiry</option>
               <option value="private-sessions">Private Yoga Sessions</option>
               <option value="group-classes">Small Group Classes</option>
+              <option value="private-groups">Private Groups</option>
               <option value="online-sessions">Online Sessions</option>
               <option value="womens-gatherings">Women&apos;s Gatherings</option>
               <option value="holistic-ceremonies">Holistic Ceremonies</option>
-              <option value="sound-healing">Sound Healing</option>
               <option value="booking">Booking Question</option>
               <option value="other">Other</option>
             </select>
